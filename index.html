@@ -1,88 +1,135 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>起興企業｜Rise Fortune — 歐洲經典與現代地毯</title>
-<meta name="description" content="起興企業（Rise Fortune）自1985年投入歐洲地毯進口與零售，是『法蘭德斯地毯』品牌的母公司。">
-<link rel="stylesheet" href="assets/styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- EDIT: 網站標題（瀏覽器分頁文字、SEO 標題） -->
+  <title>起興企業｜Rise Fortune — 歐洲經典與現代地毯</title>
+  <!-- EDIT: SEO 描述（建議 80–160 字） -->
+  <meta name="description" content="起興企業（Rise Fortune）自 1985 年投入歐洲地毯進口與零售，是『法蘭德斯地毯』品牌的母公司。以誠信、品質與設計，為居家與商空帶來耐看、耐用的選品。">
+  <!-- 如果你已放 favicon，取消以下註解並替換路徑 -->
+  <!-- <link rel="icon" href="assets/img/favicon.png" type="image/png"> -->
+  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    /* 可選：暫時強調編輯區塊邊框以便辨識（完成後可移除） */
+    /* [data-edit] { outline: 1px dashed #B49A67; outline-offset: 2px; } */
+  </style>
 </head>
 <body>
+  <!-- ====================== 頁首（導覽列／Logo） ====================== -->
+  <header class="header" data-edit="header">
+    <div class="container nav">
+      <!-- EDIT: 左上角 Logo 文字，若改用圖片可以 <img> 取代 -->
+      <!-- 例如：<img src="assets/img/logo.png" alt="Rise Fortune" height="28"> -->
+      <div class="logo">RISE FORTUNE</div>
 
-<header class="header">
-  <div class="container nav">
-    <div class="logo">RISE FORTUNE</div>
-    <nav class="menu">
-      <a href="index.html">首頁</a>
-      <a href="story.html">品牌沿革</a>
-      <a href="craft.html">工藝精神</a>
-      <a href="contact.html">聯絡</a>
-      <a href="https://flanders.rug.com.tw" target="_blank" rel="noopener">Flanders 主站</a>
-      <a href="https://outlet.rug.com.tw" target="_blank" rel="noopener">OUTLET 特賣</a>
-    </nav>
-    <button class="burger" aria-label="Menu">☰</button>
-  </div>
-</header>
+      <!-- EDIT: 導覽連結文字與順序。若不需要某項可刪除該 <a> -->
+      <nav class="menu">
+        <a href="index.html">首頁</a>
+        <a href="story.html">品牌沿革</a>
+        <a href="craft.html">工藝精神</a>
+        <a href="contact.html">聯絡</a>
+        <!-- 外部連結（Flanders / OUTLET） -->
+        <a href="https://flanders.rug.com.tw" target="_blank" rel="noopener">Flanders 主站</a>
+        <a href="https://outlet.rug.com.tw" target="_blank" rel="noopener">OUTLET 特賣</a>
+      </nav>
 
-<section class="container hero">
-  <div class="hero-card">
-    <div class="kicker">品牌傳承</div>
-    <h1>起興企業 — 歐洲經典與現代美學</h1>
-    <p class="lead">自1985年以來，我們以誠信、品質與設計，為居家與商空帶來耐看、耐用的地毯選品。</p>
-    <div class="cta">
-      <a class="btn primary" href="https://flanders.rug.com.tw" target="_blank" rel="noopener">前往法蘭德斯主站</a>
-      <a class="btn" href="https://outlet.rug.com.tw" target="_blank" rel="noopener">前往 OUTLET 特賣</a>
+      <!-- 手機版漢堡選單按鈕（無需修改） -->
+      <button class="burger" aria-label="Menu">☰</button>
     </div>
-  </div>
-  <div class="hero-img"><div class="placeholder">品牌主視覺（可更換）</div></div>
-</section>
+  </header>
 
-<section class="section container">
-  <h2 class="h2">三個關鍵價值</h2>
-  <div class="grid-3">
-    <article class="card">
-      <img src="assets/img/placeholder-1.svg" alt="" />
-      <div class="body">
-        <h3>設計導向</h3>
-        <p class="muted">歐洲古典與現代語彙，融入當代空間比例與材質。</p>
-      </div>
-    </article>
-    <article class="card">
-      <img src="assets/img/placeholder-2.svg" alt="" />
-      <div class="body">
-        <h3>嚴選工藝</h3>
-        <p class="muted">耐磨、耐看、好維護，兼顧觸感與耐用度。</p>
-      </div>
-    </article>
-    <article class="card">
-      <img src="assets/img/placeholder-3.svg" alt="" />
-      <div class="body">
-        <h3>誠信服務</h3>
-        <p class="muted">批發零售並重，提供專業諮詢與長期售後。</p>
-      </div>
-    </article>
-  </div>
-</section>
+  <!-- ====================== Hero 區（主視覺 + 標語 + 兩顆按鈕） ====================== -->
+  <section class="container hero" data-edit="hero">
+    <div class="hero-card">
+      <!-- EDIT: 小標／kicker（可放「Since 1985」「品牌傳承」等） -->
+      <div class="kicker">品牌傳承</div>
 
-<section class="section container">
-  <div class="banner">
-    <div>
-      <div class="kicker">購物入口</div>
-      <h3 style="margin:6px 0 8px">立即選購 · Flanders 主站 / OUTLET 特賣</h3>
-      <p class="muted" style="margin:0">兩個站各自承接不同選品，歡迎比價比較材質。</p>
+      <!-- EDIT: 首頁主標題（建議 12～18 字，中英文皆可） -->
+      <h1>起興企業 — 歐洲經典與現代美學</h1>
+
+      <!-- EDIT: 副標／引言（建議 30～60 字，精煉敘述品牌價值） -->
+      <p class="lead">
+        自 1985 年以來，我們以誠信、品質與設計，為居家與商空帶來耐看、耐用的地毯選品。
+      </p>
+
+      <!-- EDIT: 兩個主要行動按鈕（連結可換為你的實際網址） -->
+      <div class="cta">
+        <a class="btn primary" href="https://flanders.rug.com.tw" target="_blank" rel="noopener">前往法蘭德斯主站</a>
+        <a class="btn" href="https://outlet.rug.com.tw" target="_blank" rel="noopener">前往 OUTLET 特賣</a>
+      </div>
     </div>
-    <div class="cta">
-      <a class="btn" href="https://flanders.rug.com.tw" target="_blank" rel="noopener">Flanders 主站</a>
-      <a class="btn" href="https://outlet.rug.com.tw" target="_blank" rel="noopener">OUTLET 特賣</a>
+
+    <!-- EDIT: 主視覺圖片（建議 1600×1000 以上，柔和自然光） -->
+    <!-- 將 hero-main.jpg 換成你的圖片檔，或改用 <picture> 提供手機版裁切 -->
+    <div class="hero-img">
+      <img src="assets/img/hero-main.jpg" alt="Rise Fortune 起興企業品牌主視覺（可更換）"
+           style="border-radius:18px; border:1px solid #e5e7eb;">
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- ====================== 三大價值（卡片區） ====================== -->
+  <section class="section container" data-edit="values">
+    <!-- EDIT: 區塊標題 -->
+    <h2 class="h2">三個關鍵價值</h2>
 
-<footer class="footer">
-  © Rise Fortune Co., Ltd. — Since 1985 · Email: <a href="mailto:sales@risefortune.com.tw">sales@risefortune.com.tw</a>
-</footer>
-<script src="assets/script.js"></script>
+    <div class="grid-3">
+      <!-- 卡片 1 -->
+      <article class="card">
+        <!-- EDIT: 置換為你的產品／空間照 -->
+        <img src="assets/img/placeholder-1.svg" alt="設計導向（可更換圖片）" />
+        <div class="body">
+          <!-- EDIT: 卡片標題／內文 -->
+          <h3>設計導向</h3>
+          <p class="muted">歐洲古典與現代語彙，融入當代空間比例與材質。</p>
+        </div>
+      </article>
 
+      <!-- 卡片 2 -->
+      <article class="card">
+        <img src="assets/img/placeholder-2.svg" alt="嚴選工藝（可更換圖片）" />
+        <div class="body">
+          <h3>嚴選工藝</h3>
+          <p class="muted">耐磨、耐看、好維護，兼顧觸感與耐用度。</p>
+        </div>
+      </article>
+
+      <!-- 卡片 3 -->
+      <article class="card">
+        <img src="assets/img/placeholder-3.svg" alt="誠信服務（可更換圖片）" />
+        <div class="body">
+          <h3>誠信服務</h3>
+          <p class="muted">批發零售並重，提供專業諮詢與長期售後。</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====================== 購物入口（橫幅 CTA） ====================== -->
+  <section class="section container" data-edit="cta-banner">
+    <div class="banner">
+      <div>
+        <!-- EDIT: 小標與段落 -->
+        <div class="kicker">購物入口</div>
+        <h3 style="margin:6px 0 8px">立即選購 · Flanders 主站 / OUTLET 特賣</h3>
+        <p class="muted" style="margin:0">兩個站各自承接不同選品，歡迎比價比較材質。</p>
+      </div>
+      <div class="cta">
+        <!-- EDIT: 兩個按鈕連結與文案 -->
+        <a class="btn" href="https://flanders.rug.com.tw" target="_blank" rel="noopener">Flanders 主站</a>
+        <a class="btn" href="https://outlet.rug.com.tw" target="_blank" rel="noopener">OUTLET 特賣</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 頁尾（聯絡資訊／版權） ====================== -->
+  <footer class="footer" data-edit="footer">
+    <!-- EDIT: 公司聯絡方式（信箱、電話、地址） -->
+    © Rise Fortune Co., Ltd. — Since 1985 · Email：
+    <a href="mailto:sales@risefortune.com.tw">sales@risefortune.com.tw</a>
+  </footer>
+
+  <!-- 網站互動腳本（包含行動版漢堡選單），通常不需修改 -->
+  <script src="assets/script.js"></script>
 </body>
 </html>

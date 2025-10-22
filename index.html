@@ -8,7 +8,7 @@
   <!-- EDIT: SEO 描述（建議 80–160 字） -->
   <meta name="description" content="起興企業（Rise Fortune）自 1985 年投入歐洲地毯進口與零售，是『法蘭德斯地毯』品牌的母公司。以誠信、品質與設計，為居家與商空帶來耐看、耐用的選品。">
   <!-- 如果你已放 favicon，取消以下註解並替換路徑 -->
-  <!-- <link rel="icon" href="assets/img/favicon.png" type="image/png"> -->
+  <link rel="icon" href="assets/img/favicon.png" type="image/png"> 
   <link rel="stylesheet" href="assets/styles.css" />
   <style>
     /* 可選：暫時強調編輯區塊邊框以便辨識（完成後可移除） */
@@ -19,9 +19,12 @@
   <!-- ====================== 頁首（導覽列／Logo） ====================== -->
   <header class="header" data-edit="header">
     <div class="container nav">
-      <!-- EDIT: 左上角 Logo 文字，若改用圖片可以 <img> 取代 -->
-      <!-- 例如：<img src="assets/img/logo.png" alt="Rise Fortune" height="28"> -->
-      <div class="logo">RISE FORTUNE</div>
+      <!-- Logo 與公司名稱緊貼顯示 -->
+<div class="logo">
+  <img src="assets/img/logo.png" alt="Rise Fortune" height="75">
+  <span class="logo-text">RISE FORTUNE ENT.</span>
+</div>
+
 
       <!-- EDIT: 導覽連結文字與順序。若不需要某項可刪除該 <a> -->
       <nav class="menu">
@@ -59,12 +62,22 @@
         <a class="btn" href="https://outlet.rug.com.tw" target="_blank" rel="noopener">前往 OUTLET 特賣</a>
       </div>
     </div>
-
     <!-- EDIT: 主視覺圖片（建議 1600×1000 以上，柔和自然光） -->
     <!-- 將 hero-main.jpg 換成你的圖片檔，或改用 <picture> 提供手機版裁切 -->
+    <!-- ====================== 主視覺圖片（支援 WebP + JPG 備援） ====================== -->
     <div class="hero-img">
-      <img src="assets/img/hero-main.jpg" alt="Rise Fortune 起興企業品牌主視覺（可更換）"
-           style="border-radius:18px; border:1px solid #e5e7eb;">
+    <!-- 使用 <picture> 標籤實現雙格式相容 -->
+      <picture>
+      <!-- 當瀏覽器支援 WebP 時，會優先載入這張（更小更快） -->
+      <source srcset="assets/img/hero-main.webp" type="image/webp">
+      <!-- 不支援 WebP 時，會回退載入 JPG -->
+      <img 
+       src="assets/img/hero-main.jpg" 
+       alt="Rise Fortune 起興企業品牌主視覺圖"
+        style="border-radius:18px; border:1px solid #e5e7eb;"
+        loading="lazy"
+      >
+      </picture>
     </div>
   </section>
 
